@@ -14,5 +14,21 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>bcard2-app-releases</id>
+      <name>bcard2-app-releases</name>
+      <url>http://ec2-13-233-53-98.ap-south-1.compute.amazonaws.com:8081/nexus/content/repositories/bcard2-app-releases/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>bcard2-app-snapshots</id>
+      <name>bcard2-app-snapshots</name>
+      <url>http://ec2-13-233-53-98.ap-south-1.compute.amazonaws.com:8081/nexus/content/repositories/bcard2-app-snapshots/</url>
+      <layout>legacy</layout>
+    </snapshotRepository>
+  </distributionManagement>
   </dependencies>
 </project>
